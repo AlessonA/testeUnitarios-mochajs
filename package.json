@@ -1,0 +1,22 @@
+{
+  "name": "testesunitarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlessonA/testeUnitarios-mochajs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlessonA/testeUnitarios-mochajs/issues"
+  },
+  "homepage": "https://github.com/AlessonA/testeUnitarios-mochajs#readme",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
