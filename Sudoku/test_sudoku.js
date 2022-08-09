@@ -1,6 +1,6 @@
 const assert = require("assert");
 
-const { validColumn , validRow, flag, sudokuIsValid} = require("./index");
+const { validColumn , validRow, flag, sudokuIsValid} = require("./sudoku");
 
 const { boards } = require('./boards');
 const { isArrayBuffer } = require("util/types");
