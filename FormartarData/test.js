@@ -1,6 +1,6 @@
 var assert = require('assert');
-const { dates } = require('../FormartarData/cases');
-const { date, validDate, isArr , dataIsNumber} = require('../FormartarData/formatDate')
+const { dates } = require('./cases');
+const { date, validDate, isArr , dataIsNumber} = require('./formatDate')
 
 describe('Conferir data passo a passo', function () {
 
@@ -27,6 +27,7 @@ describe('Conferir data passo a passo', function () {
         })
     })
 })
+
 describe('Validação da API completa',function(){
     dates[2].forEach(function (value, index) {
         describe('data format from dd/mm/yyyy to yyyy/mm/dd', function () {
