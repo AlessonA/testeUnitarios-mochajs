@@ -3,11 +3,22 @@ const assert = require('assert');
 const chai = require('chai');
 const expect = chai.expect;
 
+/*
+    # Nesse teste foi aplicado usando a comparação, usando chai e o assert do Node.
+    # Estou usando nesse teste o expect da biblioteca do chai.
+
+*/
+
 describe('Calcular > devolve um numero e verifica se é um numero', function () {
     beforeEach(function () {
         this.calc = new Calcular();
         
     });
+    
+     /*
+        # Estou usando orientação a objeto para poder testar varias funções, aplicando assim teste unitarios.
+        Por isso da utilização do 'this' e 'new' 
+    */
 
     it('somar() retorno é um numero /chai/', function () {
         expect(this.calc.somar(1, 3)).to.be.a('number');
@@ -35,9 +46,12 @@ describe('Resultados da funções', () => {
     beforeEach(function(){
         this.calcular = new Calcular();
     })
+        // With 'for' it is creating random numbers from 0 to 10
     for(i=0;i<3;i++){
+        // Math.random generates number from 0 to 1, to increase the values i'm multiplying by 10
         num01 = Math.floor(Math.random() * 10)
-        num02 = (Math.floor(Math.random() * 10))
+        // Math.floor convert real numbers to integers
+        num02 = Math.floor(Math.random() * 10)
 
         num01 =  num01 === 0 ? 1 : num01;
         num02 = num02 === 0 ? 1 : num02;
@@ -69,6 +83,7 @@ describe('Resultados da funções', () => {
     }
 
     it('divisao(),daParaCalcular() > deve emetir um erro se tiver uma divisão por 0',function(){
+        // throw receives with first argument an Error funtion or method, the second argument is the expected response
         expect(() =>{
             this.calcular.daParaCalcular(0,0)
         }).to.throw(Error,'Não é possivél dividir por 0')
